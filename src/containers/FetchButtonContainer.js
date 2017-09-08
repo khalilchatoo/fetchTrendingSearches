@@ -3,20 +3,20 @@ import FetchButton from '../components/FetchButton.js';
 import { loadingHotTrends, updateHotTrends } from '../actions';
 
 const mapStateToProps = (state) => {
-  return { 
-  }
+	return { 
+	}
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-  	loadingHotTrends: () => dispatch(loadingHotTrends()),
-  	updateHotTrends: (data) => dispatch(updateHotTrends(data))
-  }
+	return {
+		loadingHotTrends: () => dispatch(loadingHotTrends()),
+		updateHotTrends: (data) => dispatch(updateHotTrends(data))
+	}
 }
 
 const FetchButtonContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps
+	mapStateToProps,
+	mapDispatchToProps
 )(FetchButton)
 
 export default FetchButtonContainer

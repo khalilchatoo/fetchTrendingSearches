@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fetchAndUpdate from '../helpers/fetchAndUpdate.js';
+import './App.css';
 
 class FetchButton extends Component {
     constructor(props){

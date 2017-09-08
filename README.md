@@ -1,7 +1,7 @@
 # Fetch Google's Hottest Trends
 ### Installation
 
-Install the dependencies and devDependencies and start the server.
+Install the dependencies and start the server.
 
 ```sh
 $ git clone https://github.com/khalilchatoo/fetchTrendingSearches.git

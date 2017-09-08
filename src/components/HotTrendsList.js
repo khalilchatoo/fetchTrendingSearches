@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import TrendRow from './TrendRow.js'
+import React, { Component } from 'react';
+import TrendRow from './TrendRow.js';
 
 class HotTrendsList extends Component {
     constructor(props){

@@ -4,14 +4,14 @@ import { loadingHotTrends, updateHotTrends } from '../actions';
 
 const mapStateToProps = (state) => {
   return {
-  	loading: state.loading 
+    loading: state.loading 
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-  	loadingHotTrends: () => dispatch(loadingHotTrends()),
-  	updateHotTrends: (data) => dispatch(updateHotTrends(data))
+    loadingHotTrends: () => dispatch(loadingHotTrends()),
+    updateHotTrends: (data) => dispatch(updateHotTrends(data))
   }
 }
 

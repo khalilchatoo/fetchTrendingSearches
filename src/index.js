@@ -10,9 +10,9 @@ import registerServiceWorker from './registerServiceWorker';
 let store = createStore(trendsReducers);
 
 ReactDOM.render(
-	<Provider store = {store}>
-		<AppContainer />
-	</Provider>,
-	document.getElementById('root')
+    <Provider store = {store}>
+        <AppContainer />
+    </Provider>,
+    document.getElementById('root')
 );
 registerServiceWorker();
