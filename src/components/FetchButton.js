@@ -16,8 +16,8 @@ class FetchButton extends Component {
 
     render(){
         return (
-            <div>
-                <button onClick={this.onFetchClick}>Fetch <strong>hottest</strong> trends</button>
+            <div style={{ padding: 15 }}>
+                <button style={{fontSize: 18}} onClick={this.onFetchClick}>Fetch <strong>hottest</strong> trends</button>
             </div>
         )
     }

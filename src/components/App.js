@@ -30,8 +30,8 @@ class App extends Component {
             appContent = <div>Loading...</div>
         } else {
             appContent = [
-                <FetchButtonContainer />,
-                <HotTrendsListContainer />
+                <FetchButtonContainer key="fetchBtn" />,
+                <HotTrendsListContainer key="hotTrendsList" />
             ]
         }
 

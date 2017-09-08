@@ -1,15 +1,15 @@
-const trendsExampleData = [
-    { title: "Jason" },
-    { title: "Khalil" },
-    { title: "Tam" },
-    { title: "Chatoo" }
-];
+import $ from 'jquery';
 
 const fetchAndUpdate = (options) => {
 	options.loadingHotTrends();
-	setTimeout(() => {
-		options.updateHotTrends(trendsExampleData);
-	}, 1500);
+
+	const jqxhr = $.get("http://localhost:3001/hot_trends")
+	.done((data) =>  {
+    	options.updateHotTrends(data.trends);
+	})
+	.fail(() =>  {
+    	alert( "error" );
+    })
 }
 
 export default fetchAndUpdate

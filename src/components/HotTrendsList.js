@@ -10,7 +10,7 @@ class HotTrendsList extends Component {
         return (
             <div>
                 {this.props.trends.map((trend,index) => 
-                    <TrendRow {...trend} index={index+1}/>
+                    <TrendRow {...trend} index={index+1} key={index}/>
                 )}
             </div>
         )
